@@ -528,6 +528,11 @@ button {
   max-width: 264px;
 }
 
+.footer-social-container {
+  margin-right: 80px;
+  /* Відступ до форми підписки */
+}
+
 .footer-social-title {
   font-weight: 500;
   font-size: 16px;
@@ -562,3 +567,57 @@ button {
 .footer-social-icon {
   fill: #f4f4fd;
 }
+
+
+
+/* Контейнер форми - ставимо елементи в ряд */
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+  /* Відступ між інпутом і кнопкою */
+}
+
+/* Поле введення */
+.footer-subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 4px;
+  padding-left: 16px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  /* Тінь для інпуту згідно з макетом */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+/* Кнопка */
+.footer-subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Іконка в кнопці */
+.footer-subscribe-icon {
+  margin-left: 16px;
+  fill: #ffffff;
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background-color: #404bbf;
+  /* Колір при наведенні */
+}
+
