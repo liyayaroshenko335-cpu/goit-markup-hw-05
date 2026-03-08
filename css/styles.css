@@ -568,8 +568,17 @@ button {
   fill: #f4f4fd;
 }
 
+.footer-subscribe-container {
 
-
+}
+.footer-subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
 /* Контейнер форми - ставимо елементи в ряд */
 .footer-subscribe-form {
   display: flex;
@@ -587,12 +596,18 @@ button {
   padding-left: 16px;
   color: #ffffff;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 0.04em;
+   
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   /* Тінь для інпуту згідно з макетом */
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));*/
 }
 
+.footer-subscribe-input::placeholder {
+  color: #ffffff;
+  /* Білий колір для підказки "E-mail" */
+}
 /* Кнопка */
 .footer-subscribe-btn {
   display: flex;
@@ -606,13 +621,17 @@ button {
   color: #ffffff;
   cursor: pointer;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-family: "Roboto",sans-serif;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Іконка в кнопці */
 .footer-subscribe-icon {
   margin-left: 16px;
-  fill: #ffffff;
+  /*fill: #ffffff;*/
 }
 
 .footer-subscribe-btn:hover,
