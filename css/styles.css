@@ -530,7 +530,6 @@ button {
 
 .footer-social-container {
   margin-right: 80px;
-  /* Відступ до форми підписки */
 }
 
 .footer-social-title {
@@ -561,7 +560,6 @@ button {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
-
 }
 
 .footer-social-icon {
@@ -579,14 +577,12 @@ button {
   color: #ffffff;
   margin-bottom: 16px;
 }
-/* Контейнер форми - ставимо елементи в ряд */
+
 .footer-subscribe-form {
   display: flex;
   gap: 24px;
-  /* Відступ між інпутом і кнопкою */
 }
 
-/* Поле введення */
 .footer-subscribe-input {
   width: 264px;
   height: 40px;
@@ -598,17 +594,13 @@ button {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-   
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  /* Тінь для інпуту згідно з макетом */
-  /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));*/
 }
 
 .footer-subscribe-input::placeholder {
   color: #ffffff;
-  /* Білий колір для підказки "E-mail" */
 }
-/* Кнопка */
+
 .footer-subscribe-btn {
   display: flex;
   justify-content: center;
@@ -628,15 +620,40 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Іконка в кнопці */
 .footer-subscribe-icon {
   margin-left: 16px;
-  /*fill: #ffffff;*/
 }
 
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
   background-color: #404bbf;
-  /* Колір при наведенні */
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%);
 }
 
