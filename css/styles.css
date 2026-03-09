@@ -647,6 +647,12 @@ button {
   pointer-events: none;
 }
 
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .modal {
   width: 408px;
   min-height: 584px;
